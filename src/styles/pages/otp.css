@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300);
+
+* {
+  box-sizing: border-box;
+  transition: all 0.3s ease; 
+}
+
+body {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.form {
+  width: 500px;
+  background-color: #eeeeee;
+  padding: 0 30px;
+  display: grid;
+  gap: 20px;
+  padding-bottom: 30px;
+  transition: all 0.5s ease; 
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+}
+
+.otpverify {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  animation: fadeIn 1s ease; 
+}
+
+.btn {
+  padding: 10px;
+  background-color: #82eec1;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 150px;
+  
+}
+
+.otpverify input {
+  width: 64%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateZ(20px);
+    transition: all 1s;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
