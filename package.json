@@ -3,14 +3,15 @@
     "express": "^4.19.2",
     "express-handlebars": "^7.1.2",
     "handlebars": "^4.7.8",
-    "json-server": "^1.0.0-alpha.23"
+    "json-server": "^1.0.0-alpha.23",
+    "node-fetch": "^3.3.2"
   },
-  "name": "shop_pet",
+  "name": "pet-shop-frontend",
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
     "start": "nodemon --inspect src/index.js",
-    "watch":"node-sass -w src/resources/scss/app.scss src/public/css/app.css",
+    "watch": "node-sass -w src/resources/scss/app.scss src/public/css/app.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

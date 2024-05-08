@@ -1,1 +1,120 @@
-<h1>product</h1>
+ <div class="list-group list-group-flush my-3">
+        <a href="/" class="list-group-item list-group-item-action bg-transparent  second-text active" style="color: #bbbec5;"><i
+                class="fas fa-tachometer-alt me-2" style="color: #bbbec5;"></i>Dashboard</a>
+        <a href="/product" class="list-group-item list-group-item-action  bg-transparent second-text fw-bold active"  style="color: #00ad6e"><i
+                class="fas fa-gift me-2" style="color: #00ad6e"></i>Products</a>
+        <a href="/category" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                class="fas fa-calendar me-2"></i>Category</a>
+        <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                class="fas fa-shopping-cart me-2"></i>Store </a>
+        <a href="/chart" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                class="fas fa-chart-line me-2"></i>Chart</a>
+        <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                class="fas fa-solid fa-user me-2"></i>User</a>
+</div>
+    </div>
+    <div id="page-content-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
+            <div class="d-flex align-items-center">
+                <i class="fa fa-bars primary-text fs-4 me-3" id="menu-toggle"></i>
+                <h4 class="fs-2 m-0" style="text-transform: uppercase;">Product Manager</h4>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle second-text fw-bold" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user me-2"></i>John Doe
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+         <div class="col-8" style="margin-left: 30px;">
+                <button class="btn btn-primary  newProduct " data-bs-toggle="modal" data-bs-target="#userForm">Add Product <i
+                        class="bi bi-people"></i></button>
+            </div>
+            <div class="modal fade" id="userForm">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Fill the Form</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <form action="#" id="myForm">
+
+                        <div class="card imgholder">
+                            <label for="imgInput" class="upload">
+                                <input type="file" name="" id="imgInput">
+                                <i class="bi bi-plus-circle-dotted"></i>
+                            </label>
+                            <img src="./image/Profile Icon.webp" alt="" width="100" height="100" class="img">
+                        </div>
+
+                        <div class="inputField">
+                            <div>
+                                <label for="name">Name:</label>
+                                <input type="text" name="" id="name" required>
+                            </div>
+                            <div>
+                                <label for="age">Age:</label>
+                                <input type="number" name="" id="age" required>
+                            </div>
+
+                            <div>
+                                <label for="email">E-mail:</label>
+                                <input type="email" name="" id="email" required>
+                            </div>
+                            <div>
+                                <label for="phone">Number:</label>
+                                <input type="text" name="" id="phone" minlength="11" maxlength="11" required>
+                            </div>
+                            <div>
+                                <label for="sDate">Start Date:</label>
+                                <input type="date" name="" id="sDate" required>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" form="myForm" class="btn btn-primary submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="container col-6 mt-3">
+            <input class="form-control " id="myInput" type="text" placeholder="Search...">
+        </div>
+        <div class="row my-5">
+            <div class="col-11">
+                <table class="table bg-white rounded shadow-sm table-bordered  table-hover text-center " style="margin-left: 43px;">
+                    <thead>
+                        <tr>
+                            <th scope="col" >ID </th>
+                            <th scope="col">Name </th>
+                            <th scope="col">Type </th>
+                            <th scope="col">Image</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <!-- Dữ liệu từ API sẽ được thêm vào đây -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
