@@ -1,5 +1,8 @@
 /*------slides-----*/
-
+main {
+ width: 100%;
+ height: auto;
+}
 .slides {
  display: flex;
  flex-wrap: wrap;

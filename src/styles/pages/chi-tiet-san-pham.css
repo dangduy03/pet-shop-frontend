@@ -1,3 +1,11 @@
+ 
+ body a:hover{
+text-decoration: none;
+ }
+ .details{
+  width: 100%;
+  height: 870px;
+ }
  .product-details {
   margin: auto;
   color: black;
@@ -16,10 +24,12 @@
 
  .details-title a {
   color: black;
+ 
  }
 
  .details-title p {
-  font-weight: 800;
+  font-weight: 600;
+  margin: 0 ;
  }
 
  .fa-solid {
@@ -67,12 +77,12 @@
   margin: 15px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
  }
 
  .content-left-content i {
   font-size: 10px;
-  margin: 2px;
+  margin: 7px 2px 0 2px ;
   color: rgb(168, 168, 7);
   cursor: pointer;
  }
@@ -104,6 +114,7 @@
   font-size: 20px;
   font-weight: 600;
   color: red;
+  margin: 0;
  }
 
  .price-voucher {
@@ -163,25 +174,52 @@
  .content-left-quality p {
   margin: 0 80px 0 62px;
  }
+ .content-left-quanlity-product {
+  display: flex;
+  align-items: center;
+}
 
+.content-left-quanlity-product button {
+  background: none;
+  border: none;
+  padding: 0;
+}
 
+.content-left-quanlity-product button i {
+  font-size: 16px;
+}
+
+.content-left-quanlity-product input {
+  flex: 1;
+  margin: 0 5px;
+  padding:  0 7px;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  max-width: 50px;
+}
+
+/* 
  .content-left-quanlity-product input {
-  width: 40px;
+  width: 60px;
   margin: 0 -5px 0 -5px;
   border: 1px solid black;
   outline: none;
   height: 20px;
-  font-size: 13px;
+  font-size: 16px;
   border-radius: 0px;
 
  }
+ .content-left-quanlity-product button i{
+  margin-bottom: 10px;
+ }
 
  .content-left-quanlity-product button {
-  height: 20px;
+  height: 27px;
+  width: 30px;
   background-color: transparent;
   border: 1px solid rgb(0, 0, 0);
   cursor: pointer;
- }
+ } */
 
  .content-left-quality span {
   margin-left: 20px;
@@ -192,8 +230,16 @@
   justify-content: space-around;
   align-items: center;
   margin: 30px 0 30px 0;
+  cursor: pointer;
  }
+ .content-left-handle-product a{
+  color: black;
+  display: flex;
 
+ }
+ .content-left-handle-product a:hover{
+  text-decoration: none;
+ }
  .content-left-handle-product-add {
   margin-left: 26px;
   display: flex;
@@ -202,15 +248,17 @@
   border: 1px solid black;
   width: 200px;
   height: 40px;
+  font-size: 16px;
+  text-align: center;
  }
-
+ .content-left-handle-product-add p{
+  margin: 0;
+ }
  .content-left-handle-product-add i {
+  padding-top: 2px;
   font-size: 17px;
  }
 
- .fa-solid {}
-
- .fa-cart-shopping {}
 
  .content-left-handle-product-sale {
   border: 1px solid black;
@@ -220,16 +268,46 @@
   justify-content: center;
   align-items: center;
   margin-right: 60px;
+  cursor: pointer;
+  font-size: 16px;
+ }
+ .content-left-handle-product-sale p{
+  margin:0;
  }
  .details-content-bottom{
   width: 100%;
-  height: 500px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-  margin-top: 30px;
-  padding: 20px 0 0 40px;
+  margin: 30px 0 30px 0 ;
+  padding: 25px 0 0 40px;
  }
  .details-content-bottom p{
   text-transform: uppercase;
   font-size: 25px;
   font-family: 600;
  }
+ .details-content-bottom-product{
+
+ }
+ .content{
+ display: flex;
+
+ margin: 20px 0;
+
+ }
+ .content a{
+  color: black;
+ }
+ .content label{
+  width: 200px;
+  margin-right: 20px;
+ }
+ .content i{
+  font-size: 11px;
+ }
+ .details-content-bottom-category{
+ 
+ }
+.details-pet {
+ padding-bottom: 30px;
+ margin: 0 20px 0 126px;
+}

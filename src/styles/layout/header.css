@@ -182,8 +182,6 @@ header {
  margin: 10px 55px 8px 0;
 }
 
-.head-search {}
-
 input[type=text] {
  margin-top: 30px;
  height: 40px;
@@ -225,9 +223,12 @@ input::placeholder {
  margin: 21px 0 10px 50px;
  width: 270px;
  height: 36px;
+ color: #fff;
 
 }
-
+.head-right span a {
+ color: #fff;
+}
 .head-right span:nth-child(1) {
  display: block;
  text-align: center;
@@ -235,6 +236,7 @@ input::placeholder {
  height: 18px;
  font-size: 16px;
  font-weight: 800;
+ margin-bottom: 10 px;
 
 }
 
@@ -295,17 +297,13 @@ span>a:first-child {
 }
 
 
-
-
-
-
 .profile_account-cart {
  float: right;
  display: flex;
  justify-content: center;
  align-items: center;
  width: 250px;
- height: 52px;
+ height: 40px;
 
 }
 
@@ -316,9 +314,13 @@ span>a:first-child {
 
 .profile_account a {
  margin: 5px;
- font-size: 19px;
+ font-size: 16px;
+ color: #fff;
 }
-
+.profile_account a:hover{
+ text-decoration: none;
+ color: #bbb9b9;
+}
 .profile_account>a:last-child {
  font-weight: bolder;
 }
@@ -331,6 +333,7 @@ span>a:first-child {
 
 .cart i {
  font-size: 35px;
+ color: #fff;
 
 }
 
@@ -351,6 +354,6 @@ span>a:first-child {
  color: black;
  font-weight: bolder;
  z-index: 5;
- top: -3px;
+ top: -7px;
  right: 0;
 }
