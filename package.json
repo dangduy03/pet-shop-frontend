@@ -4,7 +4,7 @@
   "description": "",
 
   "scripts": {
-    "start":" rm -rf .parcel-cache && npx parcel src/pages/index.html",
+    "start":"del -y .parcel-cache && npx parcel src/pages/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

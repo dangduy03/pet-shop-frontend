@@ -1,0 +1,249 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #fff;
+  font-family: Quicksand;
+  overflow: auto;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0e2941;
+  border-radius: 50px;
+}
+
+header {
+  background-color: #0e2941;
+  width: 100%;
+  height: 129px;
+}
+
+.head-title {
+  height: 75px;
+  display: flex;
+}
+
+.head {
+  height: 130px;
+  margin: 0 50px;
+  padding: 0 15px;
+}
+
+.head img {
+  width: auto;
+  height: 75px;
+  margin: 10px 55px 8px 0;
+}
+
+input[type="text"] {
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  width: 681px;
+  height: 40px;
+  margin-top: 30px;
+  padding: 4px 14px;
+  font-size: 18px;
+}
+
+input::placeholder {
+  font-size: 18px;
+}
+
+.btn-search {
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 50px;
+  height: 40px;
+  position: absolute;
+  top: 30px;
+  right: 365px;
+}
+
+.btn-search i {
+  cursor: pointer;
+  padding: 4px 11px 4px 12px;
+  font-size: 26px;
+}
+
+.head-right {
+  color: #fff;
+  width: 270px;
+  height: 36px;
+  margin: 21px 0 10px 50px;
+}
+
+.head-right span a {
+  color: #fff;
+}
+
+.head-right span:first-child {
+  text-align: center;
+  margin-bottom: 10 px;
+  width: 270px;
+  height: 18px;
+  font-size: 16px;
+  font-weight: 800;
+  display: block;
+}
+
+.head-right > span:last-child {
+  text-align: center;
+  letter-spacing: 1.5px;
+  width: 270px;
+  height: 18px;
+  font-size: 16px;
+  line-height: 1.2em;
+  display: block;
+}
+
+span > a:first-child {
+  cursor: text;
+}
+
+.head-menu-nav {
+  width: 350px;
+  height: 36px;
+  display: block;
+  position: absolute;
+  top: 21.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-content {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.nav-content li:first-child a {
+  font-weight: bolder;
+}
+
+.nav-content a {
+  color: #fff;
+  background-color: none;
+  letter-spacing: -.5px;
+  margin: 0;
+  padding: 8px 9px 10px 8px;
+  font-size: 20px;
+  line-height: 18px;
+}
+
+.nav-content a:hover {
+  color: #000;
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+  font-weight: 800;
+  transition: all .2s ease-in;
+}
+
+.profile_account-cart {
+  float: right;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 40px;
+  display: flex;
+}
+
+.profile_account {
+  display: grid;
+}
+
+.profile_account a {
+  color: #fff;
+  margin: 5px;
+  font-size: 16px;
+}
+
+.profile_account a:hover {
+  color: #bbb9b9;
+  text-decoration: none;
+}
+
+.profile_account > a:last-child {
+  font-weight: bolder;
+}
+
+.cart {
+  margin-left: 50px;
+  position: relative;
+}
+
+.cart i {
+  color: #fff;
+  font-size: 35px;
+}
+
+.cart:before {
+  content: "";
+  z-index: 0;
+  background-color: #ffcd0d;
+  border-radius: 50%;
+  width: 31px;
+  height: 31px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+.cart p {
+  color: #000;
+  z-index: 5;
+  font-weight: bolder;
+  position: absolute;
+  top: -7px;
+  right: 0;
+}
+/*# sourceMappingURL=index.0d76366f.css.map */

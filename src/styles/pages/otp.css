@@ -1,69 +1,62 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:300);
 
-* {
-  box-sizing: border-box;
-  transition: all 0.3s ease; 
+body{
+  background: #0e2941;
+  font-family: Inter ;
 }
+  .otp-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* display: none; */
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
 
-body {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-}
+  .otp-form h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
 
-.form {
-  width: 500px;
-  background-color: #eeeeee;
-  padding: 0 30px;
-  display: grid;
-  gap: 20px;
-  padding-bottom: 30px;
-  transition: all 0.5s ease; 
-  border-radius: 10px;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-}
+  .otp-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
 
-input {
-  width: 100%;
-  padding: 10px;
-  outline: none;
-  border: none;
-}
-
-.otpverify {
-  width: 100%;
-  display: flex;
-  gap: 20px;
-  animation: fadeIn 1s ease; 
-}
-
-.btn {
-  padding: 10px;
-  background-color: #82eec1;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  width: 150px;
-  
-}
-
-.otpverify input {
-  width: 64%;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateZ(20px);
+  .otp-form button {
+    
+    width: 30%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
     transition: all 1s;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  .otp-form button:last-child{
+    width: 30%;
+    float: right;
+    background-color: rgb(56, 245, 56);
   }
-}
+  .otp-form button:last-child:hover{
+    width: 40%;
+    background-color: rgb(67, 125, 67);
+  }
+  .otp-form button:hover {
+    background-color: #0056b3;
+    width: 60%;
+  }
+
